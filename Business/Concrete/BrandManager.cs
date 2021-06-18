@@ -20,5 +20,10 @@ namespace Business.Concrete
         {
             return _brandDal.GetAll();
         }
+
+        public Brand GetByBrandId(int brandId)
+        {
+            return _brandDal.Get(b=>b.BrandId == brandId);
+        }
     }
 }

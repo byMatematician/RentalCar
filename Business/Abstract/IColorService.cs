@@ -1,14 +1,13 @@
 ﻿using Entities.Concrete;
 using System;
 using System.Collections.Generic;
+
 using System.Text;
 
 namespace Business.Abstract
 {
-    public interface IBrandService
+    public interface IColorService
     {
-        List<Brand> GetAll();
-
-        Brand GetByBrandId(int brandId);
+        List<Color> GetAll();
     }
 }
